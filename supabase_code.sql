@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS character;
 
 CREATE TABLE characters (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-  created_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT now()
 );
 
 CREATE TABLE character (
@@ -11,7 +11,7 @@ CREATE TABLE character (
   
   name TEXT DEFAULT 'Personaje',
   level INTEGER DEFAULT 1,
-  current_hp INTEGER DEFAULT 10,
+  current_hp INTEGER DEFAULT 10
 );
 
 CREATE TABLE character_stats (
