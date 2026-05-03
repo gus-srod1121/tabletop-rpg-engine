@@ -2,7 +2,7 @@ import { createClient } from './utils/supabase/server';
 import { cookies } from 'next/headers';
 import Link from 'next/link';
 
-export default async function Page() {
+export default async function Home() {
   const cookieStore = await cookies();
   const supabase = createClient(cookieStore);
 

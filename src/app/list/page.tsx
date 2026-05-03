@@ -2,6 +2,9 @@ import Link from "next/link";
 
 export default function List() {
     return <main>
+        <Link href="/">
+            <button>Back to home</button>
+        </Link>
         <h1>Your Characters</h1>
         <ul>
             <li>
